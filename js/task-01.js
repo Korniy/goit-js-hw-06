@@ -3,7 +3,7 @@
 
 const listEl = document.querySelector("#categories");
 const numberOfElements = listEl.children.length;
-console.log("Number of categories:", numberOfElements);
+console.log("Numbers of categories:", numberOfElements);
 
 // 2
 
