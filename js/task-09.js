@@ -10,10 +10,18 @@ function getRandomHexColor() {
     .padStart(6, 0)}`;
  
 }
+
 const buttonEl = document.querySelector('.change-color');
 const spanEl = document.querySelector('.color')
 
+// buttonEl.addEventListener('click', () => {
+//   document.body.style.backgroundColor = getRandomHexColor();
+//   spanEl.textContent = getRandomHexColor();
+// })
+
 buttonEl.addEventListener('click', () => {
-  document.body.style.backgroundColor = getRandomHexColor();
-  spanEl.textContent = getRandomHexColor();
+  const hexColor = getRandomHexColor();
+  document.body.style.backgroundColor = hexColor;
+  spanEl.textContent = hexColor;
+  
 })

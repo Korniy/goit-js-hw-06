@@ -6,33 +6,44 @@ const ingredients = [
   'Herbs',
   'Condiments',
 ];
-const body = document.querySelector("#ingredients");
 
-const firstItem = document.createElement("li");
-firstItem.textContent = 'Potatoes';
-firstItem.classList = "item";
+const listEl = document.querySelector('#ingredients');
+const createList = ingredients.map(item => {
+  const liEl = document.createElement('li');
+  liEl.textContent = item;
+  liEl.classList.add('item');
+  return liEl;
+});
+listEl.append(...createList);
 
-const SecondItem = document.createElement("li");
-SecondItem.textContent = 'Mushrooms';
-SecondItem.classList = "item";
 
-const thirdItem = document.createElement("li");
-thirdItem.textContent = "Garlic";
-thirdItem.classList = "item";
+// const listEl = document.querySelector("#ingredients");
 
-const fourthItem = document.createElement("li");
-fourthItem.textContent = "Tomatos";
-fourthItem.classList = "item";
+// const firstItem = document.createElement("li");
+// firstItem.textContent = 'Potatoes';
+// firstItem.classList = "item";
 
-const fifthItem = document.createElement("li");
-fifthItem.textContent = "Herbs";
-fifthItem.classList = "item";
+// const SecondItem = document.createElement("li");
+// SecondItem.textContent = 'Mushrooms';
+// SecondItem.classList = "item";
 
-const sixItem = document.createElement("li");
-sixItem.textContent = "Condiments";
-sixItem.classList = "item";
+// const thirdItem = document.createElement("li");
+// thirdItem.textContent = "Garlic";
+// thirdItem.classList = "item";
 
-body.append(firstItem, SecondItem, thirdItem, fourthItem, fifthItem, sixItem);
+// const fourthItem = document.createElement("li");
+// fourthItem.textContent = "Tomatos";
+// fourthItem.classList = "item";
+
+// const fifthItem = document.createElement("li");
+// fifthItem.textContent = "Herbs";
+// fifthItem.classList = "item";
+
+// const sixItem = document.createElement("li");
+// sixItem.textContent = "Condiments";
+// sixItem.classList = "item";
+
+// body.append(firstItem, SecondItem, thirdItem, fourthItem, fifthItem, sixItem);
 
 
 

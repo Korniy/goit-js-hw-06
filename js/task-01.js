@@ -8,7 +8,7 @@ console.log("Numbers of categories:", numberOfElements);
 // 2
 
 const itemsEl = document.querySelectorAll('.item');
-itemsEl.forEach.call(itemsEl, (element) => {
+itemsEl.forEach((element) => {
     const titleEl = element.querySelector('h2').innerHTML;
     console.log("Category:", titleEl);
     
